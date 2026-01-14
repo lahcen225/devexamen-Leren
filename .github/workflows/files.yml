@@ -1,0 +1,13 @@
+name : files example
+on:
+  workflow_dispatch: :
+jobs:
+  files-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: maak directory , file en content
+        run: |
+            mkdir testdir
+            echo "korte tekst" > ./testdir/output.txt
+            cat ./testdir/output.txt
+      
