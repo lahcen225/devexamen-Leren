@@ -1,0 +1,14 @@
+name : steps workflow
+on : workflow_dispatch
+jobs:
+  steps-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: create directory "testmachine"
+        run: mkdir testmachine
+      - name: unmame output in output txt
+        run: uname -a >> ./testmachine/output.txt
+      - name: verfication step
+        run: cat ./testmachine/output.txt
+      - name: listing contents of the directorie
+        run: ls -alhR
