@@ -1,6 +1,6 @@
 name : files example
 on:
-  workflow_dispatch: :
+  workflow_dispatch: 
 jobs:
   files-job:
     runs-on: ubuntu-latest
