@@ -1,0 +1,14 @@
+name: uses example
+on:
+  workflow_dispatch:
+
+jobs:
+  uses-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6.0.1
+      - name: Python Dependency Installation
+        uses: py-actions/py-dependency-install@v4.1.0
+      - name: run python script
+        run: python my_script.py
