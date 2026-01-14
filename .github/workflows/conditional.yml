@@ -25,4 +25,5 @@ jobs:
         run: echo "running in test mode"
       - name: toon de gekozen environment
         if: always()
-        run : echo "selected envrionment is : $ENVIRONMENT"
+        run: |
+          echo "Selected environment is: $ENVIRONMENT"
