@@ -1,0 +1,9 @@
+name: hello world
+on:
+  workflow_dispatch: 
+jobs:
+  jobname:
+    runs-on: uubuntu-latest 
+    steps:
+      - name: show hello world
+        run: echo hallo world
